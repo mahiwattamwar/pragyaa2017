@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lets Feed The App</title>
+
+	<style type="text/css">
+		input{
+			padding: 10px;
+			margin: 20px;
+			width: 80%;
+			font-family: sans-serif;
+		}
+		select{
+			padding: 10px;
+			margin: 20px;
+			width: 50%;
+		}
+		div{
+			background: #1abc9c;
+		}
+	</style>
+</head>
+<body>
+
+<div align = "center">
+	<p>use your common sense and fill the data as convinient to you in respective field(should be decided by you!!) </p>
+</div>
+
+<div align="center">
+	<form name="event_details">
+
+
+
+		<select id="events_category">
+		  
+		  <option value="gaming_zone">Gaming Zone</option>
+		  <option value="online_eve">Online Events</option>
+		  <option value="robotics">Robotics</option>
+		  <option value="special_events">Special Events</option>
+                  <option value="coding">Coding Event</option>
+                  <option value="tasking">Tasking</option>
+                   <option value="designing">Designing</option>
+                   <option value="quiz">Quiz</option>
+                    <option value="robotics">Robotics</option>
+                    <option value="paper">Paper Presentation</option>
+                   <option value="textplorer">Textplorer</option>
+                   <option value="cenfest">Cenfest</option>
+		</select><br>
+
+		Event Position:
+		<input type="number" id="position" min="0" max="30"><br>
+
+		Event Name:
+		<input type="text" id="event_name" required><br>
+
+		Rules:(if there are any rules)
+		<input type="text" id="rules"><br>
+
+		Description:(fill the description only)
+		<input type="text" id="desc"><br>
+
+		Game Play:(fill the info containing rounds/any criteria/like first round n second round etc etc)
+		<input type="text" id="play"><br>
+
+		Specification:(fill the specs like prize money/ judging criteria/ bot specification etc etc )
+		<input type="text" id="specs"><br>
+
+		Coordinator One:
+		<input type="text" id="coordi_one"><br>
+
+		Mobile/Email of Coordi One:
+		<input type="text" id="mobile_one"><br>
+
+		Coordinator Two:
+		<input type="text" id="coordi_two"><br>
+
+		Mobile/Email of Coordi Two:
+		<input type="text" id="mobile_two"><br>
+
+		Image/Arena/Ground/Ring/Stadium/Court <b>Link</b>(if any):
+		<input type="url" id="link"><br>
+	</form>
+
+	<button id="submit_btn" onclick="submitToDatabase()" style="width: 50%;height:30%;">Submit</button>
+        <br><br><br>
+</div>
+
+<!-- 3.6.4 -->
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBG4kSu__cTYu3NNvHY88Sc0I6Nm3pkhn8",
+    authDomain: "pragyaa2018-b6ce4.firebaseapp.com",
+    databaseURL: "https://pragyaa2018-b6ce4.firebaseio.com",
+    projectId: "pragyaa2018-b6ce4",
+    storageBucket: "pragyaa2018-b6ce4.appspot.com",
+    messagingSenderId: "91336267783"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+</body>
+</html>

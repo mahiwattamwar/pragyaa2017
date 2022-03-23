@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Hospitality</title>
+  
+  
+       
+      <link rel="stylesheet" href="css/style.css">
+      
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
+ 
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li id="link-one">
+      <div><i class="fa fa-star fa-2x" aria-hidden="true"></i>
+</div>
+      <div>Hospitality</div>
+    </li>
+    <li id="link-two">
+          <div><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
+      <div>Description</div>
+    </li>
+    <li id="link-three">
+            <div><i class="fa fa-bus fa-2x" aria-hidden="true"></i>
+             </div>
+      <div>How to reach Nanded?</div>
+    </li>
+    <li id="link-four">
+      <div>
+
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+
+</div>
+      <div>Accomodation</div>
+    </li>
+    <li id="link-five">
+      <div><i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+</div>
+      <div>Co-ordinators</div>
+    </li>
+  </ul>
+</nav>
+<div class="desktop" id="one">
+ 
+</div>
+<div class="desktop" id="two">
+  <center><h1><font family=""Arial Black", Gadget, sans-serif">DESCRIPTION</font></h1></center>
+  
+  <p>
+  	        Hospitality of the guests is of paramount importance on any auspicious occasion.Over the years, Pragyaa has grown in stature, both in terms of its content, as well as its infrastructure and logistics. The dream which had humble beginnings has come to become a technical extravaganza, drawing crowds numbering in tens of thousands.
+ </p>
+<br><p>Along with the facilities of accommodation for participants, we arrange a food court where a variety of cuisines satisfying the needs of every palateis available. Pragyaa team strives to make your stay comfortable and see to it that all participants get all the privileges and no chance of any grievances thus setting new standards in hospitality management.</p>
+ <br>
+<p>We assure that your stay will be a memorable one. Hope to see you here at the greatest technological extravaganza ever. We will be more than happy to be able to receive your suggestions and queries.
+  
+  </p>
+</div>
+<div class="desktop" id="three">
+  <center><h1>HOW TO REACH NANDED?</h1></center>
+  
+  <ul>
+  <li>Transportation by Road: Nanded is connected to all major cities by means of rail,road and air. Nanded is 650 KM east of Mumbai by road and about six-hour drive from Aurangabad and Hyderabad and 11-hour drive from Pune. Several passenger bus services operate from Nanded providing easy overnight connectivity with almost every major city in Maharashtra. These buses are reasonably priced and fairly punctual. The comfort level differs greatly from operator to operator. </li>
+  <br><br>
+  <li>Transportation by Railways
+        : Direct passenger trains are available to Nanded from Mumbai, Aurangabad , Hyderabad , Bangalore, Nagpur , Patna , Delhi , Pune and Amritsar . Nanded is one of the Divisional Headquarters of South Central Railway.
+        </li></ul>
+       
+    
+  
+  
+        <div id="map"></div>
+    <script>
+      function initMap() {
+        var nanded = {lat: 19.111638,lng:77.293086};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: nanded
+        });
+        var marker = new google.maps.Marker({
+          position: nanded,
+          map: map
+        });
+      }
+    </script>
+   
+
+      
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsH5X0GrCjZMcWhJudSUxNiHdWsr9LM0w  &callback=initMap"
+    async defer></script>
+
+</div>
+<div class="desktop" id="four">
+  <center><h1>ACCOMMODATION</h1></center>
+  
+  <ul>
+
+    <li>Accommodation for participants is free.</li>
+    <br>
+    <li>Food Charges will be applicable.</li>
+    <br>
+    <li>Girl participants will be accommodated in SGGS Girl's Hostel in College campus.</li>
+    <br>
+    <li>Boy participants will be accommodated in Boy's Hostel and nearby places to College campus.</li>
+    <br>
+    <li>College Buses will be running at regular intervals to and from bus station, railway station, accommodation places and college.</li>
+
+  </ul>
+</div>
+<div class="desktop" id="five">
+  <center><h1>CO-ORDINATORS</h1>
+
+  <figure><img src="tadas.JPG" ><figcaption><h4>Main Co-ordinator</h4>Abhishek Tadas<h6>+91 8180832639</h6></figcaption></figure>
+  
+  
+ <div class="inline">
+  <figure><img src="sha.JPG"  width="200px"><figcaption><h4>Joint Co-ordinator</h4>Shashank Lipate<h6>+91 9657698736</h6></figcaption></figure>
+  </div>
+   <div class="inline"> <figure><img src="vi.JPG" width="200px" ><figcaption><h4>Joint Co-ordinator</h4>Vishal Uppin<h6>+91 9405488027</h6></figcaption></figure></div>
+    <div class="inline">  <figure><img src="k.JPG" width="200px" ><figcaption><h4>Joint Co-ordinator</h4>Revati Patil<h6>+91 7972079129</h6></figcaption></figure></div>
+    <div class="inline">    <figure><img src="r.JPG" width="200px" ><figcaption><h4>Joint Co-ordinator</h4>Kshitija Wankhede<h6>+91 8888720452</h6></figcaption></figure>
+  </div>
+  </center>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
